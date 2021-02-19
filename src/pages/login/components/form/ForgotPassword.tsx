@@ -12,6 +12,15 @@ const ForgotPassword = styled.span`
   line-height: 1.25em;
   text-align: center;
   color: #989fdb;
+  @media only screen and (max-width: 1024px) {
+    padding: 0;
+    margin-top: 0.5em;
+    padding-right: 1.5em;
+    font-size: 1em;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 0.75em;
+  }
 `;
 
 export default ForgotPassword;

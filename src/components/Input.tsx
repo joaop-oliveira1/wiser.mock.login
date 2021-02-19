@@ -30,8 +30,11 @@ const StyledInput = styled.input<StyledInputProps>`
   &:focus {
     outline: none;
   }
-  @media (max-width: 72.5em) {
+  @media only screen and (max-width: 1024px) {
     width: 28.5em;
+  }
+  @media only screen and (max-width: 770px) {
+    width: 22.5em;
   }
 `;
 

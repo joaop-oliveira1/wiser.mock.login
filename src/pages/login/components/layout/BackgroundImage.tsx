@@ -1,9 +1,10 @@
 import styled from 'styled-components';
-import Image from 'next/image';
 
-const BackgroundImage = styled(Image)`
+const BackgroundImage = styled.img`
+  position: relative;
   width: 100%;
   height: 100%;
+  object-fit: cover;
   opacity: 0.25;
   transform: rotate(-180deg);
 `;

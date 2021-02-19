@@ -13,6 +13,13 @@ const ForgotPasswordLink = styled.a`
   line-height: 1.25em;
   text-align: center;
   color: #383e71;
+  @media only screen and (max-width: 1024px) {
+    font-size: 1em;
+    padding: 0;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 0.75em;
+  }
 `;
 
 export default ForgotPasswordLink;

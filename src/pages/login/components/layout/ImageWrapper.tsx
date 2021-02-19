@@ -6,8 +6,11 @@ const ImageWrapper = styled.div`
   width: 65em;
   height: 100%;
   transform: rotate(-180deg);
-  @media (max-width: 72.5em) {
-    width: 0;
+  @media only screen and (max-width: 1024px) {
+    width: 28.5em;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 22.5em;
   }
 `;
 

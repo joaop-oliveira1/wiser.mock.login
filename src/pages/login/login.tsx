@@ -21,7 +21,7 @@ export default function LoginPage() {
   return (
     <Container>
       <ImageWrapper>
-        <BackgroundImage src="/assets/background.png" alt="Picture of the author" layout="fill" />
+        <BackgroundImage src="/assets/background.png" />
       </ImageWrapper>
       <FormWrapper>
         <FormHeader>Ola, seja </FormHeader>

@@ -9,6 +9,12 @@ const FormSubtitle = styled.span`
   font-size: 1.5em;
   line-height: 1.5em;
   color: #989fdb;
+  @media only screen and (max-width: 1024px) {
+    font-size: 1.5em;
+  }
+  @media only screen and (max-width: 770px) {
+    font-size: 1em;
+  }
 `;
 
 export default FormSubtitle;
