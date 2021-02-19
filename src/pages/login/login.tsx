@@ -1,40 +1,31 @@
 import Container from './components/layout/Container';
 import ImageWrapper from './components/layout/ImageWrapper';
 import BackgroundImage from './components/layout/BackgroundImage';
-import FormWrapper from './components/form/FormWrapper';
+import FormContainer from './components/form/FormContainer';
 import FormHeader from './components/form/FormHeader';
 import FormSubtitle from './components/form/FormSubtitle';
 import FormBody from './components/form/FormBody';
-import BlankSpace from '../../components/BlankSpace';
 import React from 'react';
 import ForgotPassword from './components/form/ForgotPassword';
 import ForgotPasswordLink from './components/form/ForgotPasswordLink';
 
 export default function LoginPage() {
-  const BreakOneLine = () => <br />;
-  const BreakTwoLines = () => (
-    <>
-      <br />
-      <br />
-    </>
-  );
   return (
     <Container>
       <ImageWrapper>
         <BackgroundImage src="/assets/background.png" />
       </ImageWrapper>
-      <FormWrapper>
-        <FormHeader>Ola, seja </FormHeader>
-        <FormHeader>bem-vindo!</FormHeader>
-        <BreakTwoLines />
-        <FormSubtitle>Para acessar a plataforma,</FormSubtitle>
-        <FormSubtitle>faca seu login</FormSubtitle>
-        <BlankSpace size={4} />
+      <FormContainer>
+        <FormHeader>
+          Ola, seja <br /> bem-vindo!
+        </FormHeader>
+        <FormSubtitle>Para acessar a plataforma, faca seu login</FormSubtitle>
         <FormBody />
-        <BreakOneLine />
-        <ForgotPassword>Esqueceu seu login ou senha? Clique</ForgotPassword>
-        <ForgotPasswordLink>AQUI!</ForgotPasswordLink>
-      </FormWrapper>
+        <ForgotPassword>
+          Esqueceu seu login ou senha?
+          <ForgotPasswordLink>clique aqui</ForgotPasswordLink>
+        </ForgotPassword>
+      </FormContainer>
     </Container>
   );
 }

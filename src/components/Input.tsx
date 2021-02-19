@@ -15,6 +15,7 @@ export interface InputProps {
 }
 
 const StyledInput = styled.input<StyledInputProps>`
+  position: relative;
   display: block;
   border: ${(props) => (props.invalid ? `1px solid#FF377F` : '1px solid #989fdb')};
   box-sizing: border-box;
@@ -26,15 +27,15 @@ const StyledInput = styled.input<StyledInputProps>`
   font-size: 0.75em;
   line-height: 3em;
   padding: 1em;
-  width: 30em;
+  width: 21em;
   &:focus {
     outline: none;
   }
-  @media only screen and (max-width: 1024px) {
-    width: 28.5em;
+  @media only screen and (min-width: 768px) {
+    width: 24em;
   }
-  @media only screen and (max-width: 770px) {
-    width: 22.5em;
+  @media only screen and (min-width: 1284px) {
+    width: 30em;
   }
 `;
 

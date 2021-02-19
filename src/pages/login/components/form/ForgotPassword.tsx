@@ -1,25 +1,38 @@
 import styled from 'styled-components';
 
 const ForgotPassword = styled.span`
+  position: absolute;
   display: block;
   width: 22.5em;
   height: 2.5em;
-  padding: 0.5em;
+  top: 111%;
+  margin-left: 6em;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 1em;
-  line-height: 1.25em;
-  text-align: center;
-  color: #989fdb;
-  @media only screen and (max-width: 1024px) {
-    padding: 0;
-    margin-top: 0.5em;
-    padding-right: 1.5em;
+  font-weight: bold;
+  font-size: 0.75em;
+  line-height: 1em;
+  text-align: start;
+  color: white;
+  @media only screen and (min-width: 768px) {
+    position: relative;
+    top: 0;
+    margin-left: 0;
+    padding-left: 1em;
+    margin-top: 3em;
     font-size: 1em;
+    font-weight: normal;
+    color: #989fdb;
   }
-  @media only screen and (max-width: 768px) {
-    font-size: 0.75em;
+  @media only screen and (min-width: 1284px) {
+    position: relative;
+    top: 0;
+    margin-left: 0;
+    padding-left: 3.5em;
+    margin-top: 3em;
+    font-size: 1em;
+    font-weight: normal;
+    color: #989fdb;
   }
 `;
 

@@ -6,6 +6,7 @@ import { loginSagaAttempt } from '../../../../redux/auth/slice';
 import LoginSubmitButton from './LoginSubmitButton';
 import BlankSpace from '../../../../components/BlankSpace';
 import Input from '../../../../components/Input';
+import { SuccessNotification } from '../../../../components/ToastNotification';
 
 export default function FormBody() {
   const dispatch = useDispatch();
@@ -20,7 +21,8 @@ export default function FormBody() {
   function handleSubmit(values: LoginPayloadObject, helpers: FormikHelpers<LoginPayloadObject>) {
     const loginDto = LoginDto.fromJson(values);
     dispatch(loginSagaAttempt(loginDto));
-    helpers.resetForm();
+    SuccessNotification('Bem vindo');
+    //helpers.resetForm();
   }
 
   return (
@@ -29,8 +31,7 @@ export default function FormBody() {
         <Form>
           <Input name="username" label="E-MAIL" placeholder="seu@email.com" />
           <Input name="password" label="SENHA" placeholder="Digite sua senha..." type="password" />
-          <BlankSpace size={2} />
-          <LoginSubmitButton>Acessar</LoginSubmitButton>
+          <LoginSubmitButton>ENTRAR</LoginSubmitButton>
         </Form>
       )}
     </Formik>

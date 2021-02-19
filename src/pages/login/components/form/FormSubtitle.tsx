@@ -2,18 +2,23 @@ import styled from 'styled-components';
 
 const FormSubtitle = styled.span`
   display: block;
-  width: 15em;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
-  font-size: 1.5em;
-  line-height: 1.5em;
+  font-size: 0.75em;
+  line-height: 1.25em;
+  text-align: center;
+  margin-top: 0.75em;
   color: #989fdb;
-  @media only screen and (max-width: 1024px) {
-    font-size: 1.5em;
+  @media only screen and (min-width: 768px) {
+    font-size: 1.25em;
+    line-height: 1.25em;
+    text-align: start;
   }
-  @media only screen and (max-width: 770px) {
-    font-size: 1em;
+  @media only screen and (min-width: 1284px) {
+    font-size: 1.25em;
+    line-height: 1.25em;
+    text-align: start;
   }
 `;
 
