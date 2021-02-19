@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 
-const FormHeader = styled.span`
+const Label = styled.label`
   display: block;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 3em;
-  line-height: 1.25em;
+  font-size: 0.75em;
+  line-height: 3em;
+  display: flex;
+  align-items: center;
   color: #383e71;
 `;
 
-export default FormHeader;
+export default Label;
