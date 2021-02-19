@@ -19,9 +19,14 @@
  - Execute o comando ```cd wiser.mock.login``` no diretorio cujo o projeto foi clonado.
  - instale o projeto usando um dos dois comandos:
  - ``yarn install`` ou ```npm i```
- - Inicie o projeto em desenvolvimento usando o comando ```npm run dev``` ou ```yarn dev``` 
- - Usando seu navegador acesse o endereco ```http://127.0.0.1:3000```
 
+
+### Rodando o Projeto
+- Crie um arquivo com nome ```.env.local``` no diretorio raiz do projeto(diretorio onde a pasta src esta localizada), com o seguinte conteudo:
+  ```NEXT_PUBLIC_BASE_URL="https://602dded096eaad00176dcddd.mockapi.io/"```
+  ```NEXT_PUBLIC_API_VERSION="v1"```
+- Inicie o projeto em desenvolvimento usando o comando ```npm run dev``` ou ```yarn dev```
+- Usando seu navegador acesse o endereco ```http://127.0.0.1:3000```
 
 ---
 *Testado somente em sistemas da familia debian.
