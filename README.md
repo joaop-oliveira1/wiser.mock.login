@@ -1,11 +1,11 @@
 ## Guia de instalacao Mock Login
 
-###Instalacoes dos Requisitos minimos
+### Instalacoes dos Requisitos minimos
  - [Git](https://git-scm.com/downloads)
  - [NodeJS](https://nodejs.org/en/download/package-manager/)
  - [NextJS](https://nextjs.org/docs/getting-started)
 
-###Requisitos minimos:
+### Requisitos minimos:
  - Sitema operacional Linux*, Windows ou OSX
  - Ter o git instalado em sua maquina
  - Ter instalado o javascript runtime NodeJS na versao 14.15.5 LTS
